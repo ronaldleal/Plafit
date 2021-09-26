@@ -2,7 +2,8 @@
 <html lang="es">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="description" content="Esta página permite gestionar las finanzas personales">
+        <meta name="description" content="Esta página permite gestionar las
+            finanzas personales">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="ingresos, egresos, proyecciones">
         <meta name="robots" content="index, follow">
@@ -10,33 +11,73 @@
         <!--link rel="stylesheet" href="css/estilos.css"-->
     </head>
     <body>
-        <div>
-            <iframe src="../layouts/navegacion.html" frameborder="1" width="100%" height="50px"></iframe>
-        </div>
-        
-        <div>
-            <h1>Movimientos mensuales proyectados</h1>
+        <header>
             <div>
-                <h2>Ingresos programados</h2>
-                <iframe src="../components/ingresos.html" frameborder="1"></iframe>
-                <button>Crear ingreso</button>
-                <button>Editar ingreso</button> 
-                <button>Borrar ingreso</button>                 
+                <iframe src="../layouts/navegacion.html" frameborder="1"
+                    width="100%" height="50px"></iframe>
             </div>
-            <div>
-                <h2>Egresos programados</h2>
-                <iframe src="../components/egresos.html" frameborder="1"></iframe>
-                
-                <button>Crear egreso</button>
-                <button>Editar egreso</button> 
-                <button>Borrar egreso</button>
-            </div>            
+            <hr>
+        </header>
+        <h1>Proyecciones y metas</h1>
+        <div>            
+            <h2>Movimientos mensuales proyectados</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <h3>Ingresos programados</h3>
+                            <iframe src="../components/ingresos.html" frameborder="1"></iframe>
+                        </div>
+                        <div>
+                            <button>Crear ingreso</button>
+                            <button>Editar ingreso</button>
+                            <button>Borrar ingreso</button>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <h3>Egresos programados</h3>
+                            <iframe src="../components/egresos.html" frameborder="1"></iframe>
+                        </div>
+                        <div>
+                            <button>Crear egreso</button>
+                            <button>Editar egreso</button>
+                            <button>Borrar egreso</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
+        <hr>
         <div>
-            <div>
-                <h2></h2>
-            </div>
-            
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+                                <h3>Metas y sueños</h3>
+                                <iframe src="../components/metas.html" frameborder="1"></iframe>
+                            </div>
+                            <div>
+                                <button>Crear meta</button>
+                                <button>Editar meta</button>
+                                <button>Borrar meta</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <h3>Ingresos, egresos y ahorro acumulado</h3>
+                            <iframe src="../img/flujoCaja.jpg" frameborder="1"></iframe>
+                        </div>
+                    </td>
+                </tr>
+            </table>            
         </div>
+        <footer>
+
+        </footer>
     </body>
 </html>
